@@ -61,6 +61,10 @@ main section {
   font-family: 'Courier New', Courier, monospace;
 }
 
+main section img{
+  box-sizing: border-box;
+}
+
 #background {
   height : 725px;
 }
@@ -91,6 +95,8 @@ nav a:hover{
   color: white;
   text-decoration: none;
   padding:15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover,.join:hover {
@@ -108,10 +114,15 @@ nav a:hover{
   padding: 35px;
 }
 
+.card-img {
+  border: 10px solid #114B5F;
+}
+
 footer {
   font-family: 'Courier New', Courier, monospace;
   background-color: #114B5F;
   padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a {
@@ -142,17 +153,23 @@ footer .social img{
 .home-title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2em;
+  margin-top: 10px;
 }
 
 .book, .join {
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
+  margin-top: 10px;
 }
 
 .msg p {
   font-family: 'Courier New', Courier, monospace;
   font-size: .8em;
   padding-bottom: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+  margin: 200px 0;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
