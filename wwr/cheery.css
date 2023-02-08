@@ -1,0 +1,43 @@
+@import url(//db.onlinewebfonts.com/c/06e7b19ca9c9b7f414c8238e5a10f72d?family=Vulpa);
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gray_box{
+    background-color: lightgray;
+    grid-row: 1;
+    grid-column: 2;
+}
+.float{
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.float2 {
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: -1;
+}
+
+.title {
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+    font-size: 125px;
+    font-family: Vulpa;
+    letter-spacing: 10px;
+}
+
+.subtitle{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 75%;
+    font-size: 50px;
+    color: #9c0e11;
+    letter-spacing: 15px;
+}

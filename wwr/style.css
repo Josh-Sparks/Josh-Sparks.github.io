@@ -1,0 +1,26 @@
+body{
+    background-color: purple;
+}
+
+h1{
+    background-color: cyan;
+    padding: 30px;
+    margin: 0 auto;
+    color:#FF00FF;
+    border-radius: 50px;
+    text-align: center;
+    border: 30px inset lime;
+    max-width: 80%;
+    box-sizing: border-box;
+    /*Fits this within the box above it*/
+}
+
+div{
+    border: 5px solid black;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
