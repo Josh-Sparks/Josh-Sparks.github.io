@@ -45,6 +45,27 @@ Fonts are separated by a & */
   position:relative;
 }
 
+form{
+  margin: 0 auto;
+  width: 400px;
+  padding:1em;
+  border: 1px solid black;
+  text-align: right;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5em;
+  display: none;
+}
+
+ul{
+  list-style: none;
+}
+
 #hero-img{
   width:100%;
 }
