@@ -6,16 +6,6 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>White Water Rafting</title>
         <link type="text/css" rel="stylesheet" href="styles/site-plan-rafting.css" />
-        <script>
-            const feedbackElement = document.getElementById('feedback');
-            const formElement = document.forms[0];
-            formElement.addEventListener('submit',function(e) {
-                e.preventDefault();
-                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-                feedbackElement.style.display = "block";
-                document.body.classList.toggle('moveDown');
-            });
-        </script>
     </head>
     <body>
         <div id="content">
@@ -29,8 +19,8 @@
                 </nav>
             </header>
             <section>
-                <div id="feedback"></div>
-                <form method="post">
+                <div id="feedback">yes</div>
+                <form action="contactus.html">
                     <ul>
                         <li>
                             <label for="name">Name:</label>
@@ -44,10 +34,22 @@
                             <label for="Message">Message:</label>
                             <input type="text" id="message" name="user_message"/>
                         </li>
-                        <button type="submit">Submit</button>
+                        <li>
+                            <button type="submit">Submit</button>
+                        </li>
                     </ul>
                 </form>
             </section>
+            <script>
+                const feedbackElement = document.getElementById('feedback');
+                const formElement = document.forms[0];
+                formElement.addEventListener('submit',function(e) {
+                    e.preventDefault();
+                    feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                    feedbackElement.style.display = "block";
+                    document.body.classList.toggle('moveDown');
+                });
+            </script>
             <footer>
                 <p class="footerText">Dry Oar 2023 - Joshua Sparks</p>
                 <p><a class="footerLink" href="site-plan-rafting.html">Site Plan</a></p>
