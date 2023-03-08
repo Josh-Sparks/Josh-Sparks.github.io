@@ -1,0 +1,59 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:10px;
+}
+
+section{
+    padding: 30px;
+    overflow: hidden;
+}
+
+h1{
+    color: #2D5590;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-weight: 1;
+    font-family: sans-serif;
+}
+
+p{
+    grid-column: 1;
+    width: 100%;
+    margin-bottom: 70px;
+    color: #E5E5E5;
+}
+
+span{
+    color: lightgray;
+}
+
+form{
+    grid-column: 1;
+    align-content: center;
+}
+input{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border: none;
+}
+
+img{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.sign_up{
+    background-color: #2D5590;
+    width: 74%;
+    color: lightgray;
+    font-family: sans-serif;
+}
+
+.email{
+    margin-bottom: 20px;
+}
