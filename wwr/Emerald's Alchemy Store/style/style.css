@@ -138,3 +138,40 @@ footer ul li a img{
     margin:15%;
     height:70px;
 }
+
+.accordion {
+    background-color: #CE538A;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover{
+    background-color: #FE83BA;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #DE639A;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+button {
+    font-size: 1.5em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+section div img{
+    margin-top:15%;
+    height: 70%;
+}
