@@ -4,6 +4,7 @@ body{
 
 main{
     width: 90%;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #DE639A; 
 }
@@ -44,7 +45,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #DE639A ;
+    background-color: #5F0962;
 }
 
 .headerImage{
@@ -130,8 +131,8 @@ footer ul li a{
     text-decoration: none;
     color: #F7B2B7;
 }
-footer ul li:hover{
-    background-color: #DE639A;
+.footerLink:hover{
+    background-color: #5F0962;
 }
 
 footer ul li a img{
@@ -141,7 +142,7 @@ footer ul li a img{
 
 .accordion {
     background-color: #CE538A;
-    color: #444;
+    color: #7F2982;
     cursor: pointer;
     padding: 18px;
     width: 100%;

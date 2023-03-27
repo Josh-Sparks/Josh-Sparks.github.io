@@ -7,37 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <img src="images/path548.png">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="character-archive.html">character-archive</a></li>
-                <li><a href="locations.html">locations</a></li>
-            </ul>
-        </nav>
-        <img src="images/2203_w026_n002_1511b_p1_1511.jpg">
-        <h1>Emerald's Alchemy Emporium</h1>
-    </header>
     <main>
+        <header>
+            <nav>
+                <img src="images/path548.png" id="logo">
+                <a href="index.html">Home</a>
+                <a href="character-archive.html">Character Archive</a>
+                <a href="locations.html">Locations</a>
+                <link rel="stylesheet" href='style/style.css'>
+            </nav>
+            <img class="headerImage" src="images/2203_w026_n002_1511b_p1_1511.jpg">
+            <h1>Emerald's Alchemy Emporium</h1>
+        </header>
         <section>
-            <h1>List of Locations</h1>
-            <img src="images/tim-rebkavets-B5PNmw5XSpk-unsplash.jpg">
-            <h2>The Kingdom of Durin</h2>
-            <p>Durin is one of the largest kingdoms in Bant. It is centered around the Eris, the mountain capitol and the Eris mountains which make up the center of the kingdom. Beyond this central part of the kingdom are the smaller plains and forests to the north and south of the kingdom. It is ruled by a pair of Queens representing the southern and northern kingdom of old supposedly descendants of the goddesses of the moon and sun that is central to the kingdom’s religion. It has an ally in the southernmost kingdom of Polarus which sits in the icy tundras of the south but enemies west of it in the Empire of Calous and kingdom</p>
+            <div>
+                <h2>List of Locations</h2>
+                <img src="images/Erst 2023-03-27-00-23.jpeg">
+                <p>The fallowing is a list of locations in this little fantasy world that will act as a basis for many of the backgrounds and history of our characters. When submitting content be aware of the unique history and feel of each location.</p>
+            </div>
         </section>
+        <button class="accordion">The Kingdom of Durin</button>
+        <section class="panel">
+            <div>
+                <img src="images/tim-rebkavets-B5PNmw5XSpk-unsplash.jpg">
+                <p>Durin is one of the largest kingdoms in Bant. It is centered around the Eris, the mountain capitol and the Eris mountains which make up the center of the kingdom. Beyond this central part of the kingdom are the smaller plains and forests to the north and south of the kingdom. It is ruled by a pair of Queens representing the southern and northern kingdom of old supposedly descendants of the goddesses of the moon and sun that is central to the kingdom’s religion. It has an ally in the southernmost kingdom of Polarus which sits in the icy tundras of the south but enemies west of it in the Empire of Calous and kingdom</p>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>Joshua Sparks - 3/2023</li>
+                <li class="footerLink"><a href="site-plan.html">Site Plan</a></li>
+                <li class="footerLink"><a>Contact US</a></li>
+            </ul>
+            <ul>
+                <li class="footerLink"><a><img src="images/facebook.png"></a></li>
+                <li class="footerLink"><a><img src="images/instagram.png"></a></li>
+                <li class="footerLink"><a><img src="images/youtube.png"></a></li>
+            </ul>
+        </footer>
     </main>
-    <footer>
-        <ul>
-            <li>Joshua Sparks - 3/2023</li>
-            <li><a href="site-plan.html">Site Plan</a></li>
-            <li>Contact US</li>
-        </ul>
-        <ul>
-            <img src="images/facebook.png">
-            <img src="images/instagram.png">
-            <img src="images/youtube.png">
-        </ul>
-    </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for(i = 0; i < acc.length; i++){
+            acc[i].addEventListener("click",function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if(panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
